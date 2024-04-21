@@ -8,7 +8,7 @@ const PORT = 3000;
 const server = http.createServer((request, response) => {
   const now = new Date();
   console.log(
-    `${now} :: 요청이 들어왔습니다. (요청지${request.socket.remoteAddress})`
+    `${now} :: 요청이 들어왔습니다. (요청지 : ${request.socket.remoteAddress})`
   );
 
   response.writeHead(200, {
